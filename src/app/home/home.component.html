@@ -1,0 +1,56 @@
+<!-- <div class="mt-5">
+<button class="btn btn-danger" type="submit" [routerLink]="['/login']">Login</button>&nbsp;
+<button class="btn btn-danger" type="submit" [routerLink]="['/registration']">Signup</button>
+</div>
+
+<div class="container">
+    <h2 class="text-info mt-5 ">Product List</h2>
+    <p>Product list are here:</p>            
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let product of _productlist">
+          <td>{{product.id}}</td>
+          <td>{{product.name}}</td>
+          <td>{{product.desc}}</td>
+          <td>{{product.price}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-success" type="submit" [routerLink]="['/addproduct']">Add Product</button>
+  </div>
+   -->
+<div class="container-fluid one">
+  <h1 class="text-danger text-center">Book List</h1>
+
+  <div>
+    <button class="btn btn-danger text-white mt-3" style=" margin-left:5rem; " type="submit"
+      [routerLink]="['/barchart']">Bar Chart</button>
+    <button class="btn btn-danger text-white mt-3" style="margin-left: 61rem;" type="submit"
+      [routerLink]="['/login']">Login</button> &nbsp;
+    <button class="btn btn-danger text-white mt-3" style="background: rgb(44, 43, 43);" type="submit"
+      [routerLink]="['/registration']">Signup</button>
+  </div>
+  <form>
+    <div class="row" style="margin-left: 4rem;">
+      <div class="col-sm-3 mt-5" *ngFor="let product of _productlist">
+        <div class="card" style="width: 14rem; height: 14rem">
+          <div class="card-body">
+            <h5 class="card-title">{{product.name}}</h5>
+            <p class="card-text">{{product.desc}}</p>
+            <p class="card-text">₹{{product.price}}</p>
+            <button type="submit" (click)="success()" class="btn btn-danger">Place
+              Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
