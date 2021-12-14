@@ -1,3 +1,8 @@
+#DEMO
+![Screenshot from 2021-11-15 15-41-15](https://user-images.githubusercontent.com/37727808/145945533-11c3e6d9-ca80-44e6-a35b-5b61b00ca6aa.png)
+![Screenshot from 2021-11-15 16-57-43](https://user-images.githubusercontent.com/37727808/145945593-bcc3f5cd-efab-4b18-9a2c-11f376678219.png)
+
+
 # Ngregistration
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
